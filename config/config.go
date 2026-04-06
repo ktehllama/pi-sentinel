@@ -55,7 +55,7 @@ func DefaultConfig() Config {
 		},
 		Cooldown: CooldownConfig{AlertMinutes: 5},
 		Services: ServicesConfig{Watchlist: []string{}},
-		Telegram: TelegramConfig{BotToken: "", ChatID: "REDACTED"},
+		Telegram: TelegramConfig{BotToken: "", ChatID: ""},
 	}
 }
 
@@ -70,8 +70,11 @@ func ConfigPath() string {
 func Load() (Config, error) {
 	cfg := DefaultConfig()
 	path := ConfigPath()
-	if _, err := os.Stat(path); os.IsNotExist(err) {
-		return cfg, nil
+	if _, err := os.Stat(path); err != nil {
+		if os.IsNotExist(err) {
+			return cfg, nil
+		}
+		return cfg, fmt.Errorf("checking config path: %w", err)
 	}
 	if _, err := toml.DecodeFile(path, &cfg); err != nil {
 		return cfg, fmt.Errorf("parsing config: %w", err)
