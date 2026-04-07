@@ -1,0 +1,8 @@
+# Contains Telegram bot token — never commit
+config.toml
+~/.config/pi-sentinel/config.toml
+
+# Build outputs
+pi-sentinel
+pi-sentinel-local
+*.exe
