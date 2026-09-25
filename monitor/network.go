@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gueva/pi-sentinel/config"
+	"github.com/ktehllama/pi-sentinel/config"
 	psnet "github.com/shirou/gopsutil/v3/net"
 )
 

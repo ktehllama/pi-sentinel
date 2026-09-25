@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/gueva/pi-sentinel/config"
+	"github.com/ktehllama/pi-sentinel/config"
 )
 
 func CheckServices(cfg config.Config) []Result {

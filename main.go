@@ -7,9 +7,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/gueva/pi-sentinel/alert"
-	"github.com/gueva/pi-sentinel/config"
-	"github.com/gueva/pi-sentinel/monitor"
+	"github.com/ktehllama/pi-sentinel/alert"
+	"github.com/ktehllama/pi-sentinel/config"
+	"github.com/ktehllama/pi-sentinel/monitor"
 )
 
 func main() {

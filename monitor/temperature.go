@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gueva/pi-sentinel/config"
+	"github.com/ktehllama/pi-sentinel/config"
 )
 
 const thermalPath = "/sys/class/thermal/thermal_zone0/temp"

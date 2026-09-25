@@ -5,7 +5,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/gueva/pi-sentinel/config"
+	"github.com/ktehllama/pi-sentinel/config"
 	"github.com/shirou/gopsutil/v3/cpu"
 	"github.com/shirou/gopsutil/v3/process"
 )
