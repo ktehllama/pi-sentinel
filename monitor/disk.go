@@ -3,7 +3,7 @@ package monitor
 import (
 	"fmt"
 
-	"github.com/pi-user/pi-sentinel/config"
+	"github.com/ktehllama/pi-sentinel/config"
 	"github.com/shirou/gopsutil/v3/disk"
 )
 

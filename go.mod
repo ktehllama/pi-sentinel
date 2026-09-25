@@ -1,4 +1,4 @@
-module github.com/pi-user/pi-sentinel
+module github.com/ktehllama/pi-sentinel
 
 go 1.21
 

@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pi-user/pi-sentinel/config"
-	"github.com/pi-user/pi-sentinel/monitor"
+	"github.com/ktehllama/pi-sentinel/config"
+	"github.com/ktehllama/pi-sentinel/monitor"
 )
 
 func testCfg() config.Config {

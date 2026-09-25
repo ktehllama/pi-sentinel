@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pi-user/pi-sentinel/config"
-	"github.com/pi-user/pi-sentinel/monitor"
+	"github.com/ktehllama/pi-sentinel/config"
+	"github.com/ktehllama/pi-sentinel/monitor"
 )
 
 var logger = log.New(os.Stdout, "", 0)
