@@ -5,7 +5,7 @@
 Pi Sentinel is a lightweight Go daemon that monitors a Raspberry Pi's system health and sends alerts via stdout and Telegram DM when anomalies are detected. It is designed to be stealthy — minimal RAM and CPU footprint — while covering all major resource types.
 
 **Binary:** single static Go binary, cross-compiled for Linux ARM64  
-**Deploy:** runs as a `systemctl` service on the Pi (`pi-user@REDACTED_IP`)  
+**Deploy:** runs as a `systemctl` service on the Pi (`<user>@<pi-ip>`)  
 **Config:** `~/.config/pi-sentinel/config.toml`, editable live via `pi-sentinel set <key> <value>`
 
 ---
@@ -90,7 +90,7 @@ sudo journalctl -u pi-sentinel -f   # live logs
 
 ### 2026-04-06 — v1.0.0 (initial release)
 
-- Project scaffolded: Go module `github.com/pi-user/pi-sentinel`, gopsutil v3, BurntSushi/toml
+- Project scaffolded: Go module `github.com/ktehllama/pi-sentinel`, gopsutil v3, BurntSushi/toml
 - Config package: TOML-based config with defaults, XDG-aware path, live `set` command
 - Alert dispatcher: stateful cooldown + recovery detection, stdout + Telegram DM
 - 6 monitors: CPU, RAM, disk, services watchlist, network bandwidth (stateful delta), temperature
